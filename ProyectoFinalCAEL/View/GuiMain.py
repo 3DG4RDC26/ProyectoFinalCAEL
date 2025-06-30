@@ -120,11 +120,7 @@ class GuiMain(QWidget):
         btn_estadisticas.clicked.connect(self.mostrar_estadisticas)
         bottom_layout.addWidget(btn_estadisticas)
         bottom_layout.addSpacing(40)
-        btn_comunidades = QPushButton('Comunidades')
-        btn_comunidades.setStyleSheet(self.button_style(self.color2, self.color5, self.color3))
-        btn_comunidades.setFont(QFont('Arial', 12))
-        btn_comunidades.setFixedWidth(200)
-        bottom_layout.addWidget(btn_comunidades)
+        # Se elimina el botón de comunidades y su espaciado
         bottom_layout.addSpacerItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum))
         main_layout.addWidget(bottom_box)
 
